@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { DataService } from '../data.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class AppComponent implements OnInit{
+export class ContactComponent implements OnInit{
   dataList: any[] = []; 
   title = 'transport';
   constructor(private dataService: DataService) {}

@@ -1,0 +1,15 @@
+.container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 700px;
+    margin: 24px 400px;
+    padding: 16px;
+    background-color: whitesmoke;
+  font-family: sans-serif;
+  position: relative;
+  top: 20px;
+  border-radius: 15px;
+  }
+  .custom-container-image{
+    width: 700px;
+    height: 400px;
+  }

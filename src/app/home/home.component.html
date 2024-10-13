@@ -1,0 +1,30 @@
+<div class="container">
+ <h1>Bunty roadways</h1>
+<h2>transport service</h2>
+<h3>Single/Multi axle scooter body services</h3>
+<!-- <img src="assets/container.jpeg" alt="My Local Image" class="custom-container-image" />    -->
+<div class="carousel-container">
+  <!-- Left arrow to go to the previous slide -->
+  <a class="prev" (click)="prevSlide()">&#10094;</a>
+
+  <!-- Images will be shown here -->
+  <div class="slides" *ngFor="let image of images; let i = index">
+    <div *ngIf="currentSlide === i" class="slide fade">
+      <img [src]="image" class="carousel-image" alt="Image Carousel">
+    </div>
+  </div>
+
+  <!-- Right arrow to go to the next slide -->
+  <a class="next" (click)="nextSlide()">&#10095;</a>
+
+  <!-- Dots/Indicators below the images -->
+  <div class="dots">
+    <span *ngFor="let image of images; let i = index" 
+          class="dot" 
+          [class.active]="currentSlide === i" 
+          (click)="goToSlide(i)"></span>
+  </div>
+</div>
+</div>
+
+  
